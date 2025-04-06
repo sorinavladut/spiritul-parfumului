@@ -1,0 +1,667 @@
+/* **************** HOME PAGE ***************** */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: theSpiritFont;
+    src: url('fonts/New Spirit.otf');
+}
+
+@font-face {
+    font-family: teamSpir;
+    src: url('fonts/TEAMSPIR.TTF');
+}
+
+@font-face {
+    font-family: youngSpirit;
+    src: url('fonts/Young Spirit.ttf');
+}
+
+:root {
+    --spirit-lavender: #D87DF4;
+    --spirit-lavender-transparent: rgba(216, 125, 244, 0.2);
+    --spirit-pink: #FB61EA;
+    --spirit-light-gray: #f9f9f9;
+}
+
+body.mainSite {
+    width: 100%;
+    background: url(images/backgroundWallpaper.jpg) fixed no-repeat center center;
+    background-size: cover;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+#textLogo {
+    float: left;
+    height: 70px;
+    width: 340px;
+    padding: 15px 0px 15px 40px;
+    background: #FE76DC;
+    background: -webkit-linear-gradient(to right, #FE76DC 0%, #CD77F5 100%);
+    background: -moz-linear-gradient(to right, #FE76DC 0%, #CD77F5 100%);
+    background: linear-gradient(to right, #FE76DC 0%, #CD77F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.headerLine {
+    border: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(254, 118, 220, 0), rgba(254, 118, 220, 0.75), rgba(254, 118, 220, 0));
+}
+
+#navLinks {
+    float: right;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+#textLogo a {
+    font-family: teamSpir;
+    font-size: 30px;
+}
+
+#navLinks a {
+    font-family: youngSpirit;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px 20px;
+    text-decoration: none;
+    color: #CD77F5;
+    background: linear-gradient(to right, #FE76DC, #FE76DC 50%, #CD77F5 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+#navLinks a:hover {
+    text-decoration: underline;
+    background-position: 0 100%;
+}
+
+header {
+    background: url(images/headerWallpaper.jpg) center center;
+    width: 100%;
+    height: 600px;
+}
+
+.main {
+    padding: 0px 130px;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: black;
+    font-family: theSpiritFont;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    padding-top: 200px;
+    padding-left: 40px;
+}
+
+h2 {
+    font-size: 40px;
+    padding-left: 40px;
+}
+
+h3 {
+    font-size: 26px;
+    padding-left: 40px;
+}
+
+p {
+    font-size: 20px;
+    padding-left: 40px;
+}
+
+#readMoreBtn {
+    margin-top: 100px;
+    background-color: var(--spirit-lavender);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px 25px;
+}
+
+#readMore {
+    padding-left: 50px;
+    padding-top: 30px;
+}
+
+.card {
+    background-color: var(--spirit-lavender);
+    width: 290px;
+    height: 250px;
+    display: inline;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    border: 1px solid black;
+}
+
+.second {
+    left: 40%;
+}
+
+.third {
+    left: 60%;
+}
+
+.thumb1 {
+    background-image: url("images/thumb1.jpg");
+    background-repeat: space;
+}
+
+.thumb2 {
+    background-image: url("images/thumb2.jpg");
+}
+
+.thumb3 {
+    background-image: url("images/thumb3.jpg");
+}
+
+.iframeContainer {
+    margin-top: 350px;
+    position: relative;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.iframeContainer iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.iframeContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--spirit-lavender-transparent);
+    z-index: 0;
+}
+
+footer {
+    background-color: var(--spirit-lavender);
+    padding: 10px;
+    color: black;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: youngSpirit;
+}
+
+.footerTop {
+    height: 330px;
+    background-size: 600px;
+    padding: 20px 100px;
+    background-color: var(--spirit-light-gray);
+}
+
+.footerLinks {
+    margin: 0;
+    width: 25%;
+    margin: 0 auto;
+    float: left;
+    color: var(--spirit-lavender);
+}
+
+.footerLinks ul a,
+.footerLinks ol a {
+    text-decoration: none;
+    color: var(--spirit-lavender);
+}
+
+.footerLinks ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+.footerLinks li {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.footerLinks h4 {
+    font-size: 22px;
+}
+
+
+/* **************** MEMBERSHIP ***************** */
+
+.membershipContainer {
+    border: 1px solid #FF8DE6;
+    background-color: rgba(251, 237, 208, 0.65);
+    border-radius: 12px;
+    width: 95%;
+    height: 400px;
+    display: inline;
+    position: absolute;
+    left: 40px;
+    text-align: center;
+}
+
+.membershipContainer p,
+h3 {
+    font-family: youngSpirit;
+    font-size: 30px;
+    margin: 10px;
+    padding-left: 40px;
+}
+
+#shopNowBtn {
+    background-color: var(--spirit-lavender);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px 25px;
+}
+
+#shopNow {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.membershipPrice {
+    color: var(--spirit-pink);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#membershipTable {
+    margin: 36px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 1px solid var(--spirit-lavender);
+    padding: 12px;
+}
+
+
+/* **************** OFFERS ***************** */
+
+.offersContainer {
+    height: auto;
+}
+
+.offersContainer h2,
+.offersContainer p {
+    margin: 0 auto;
+    padding-left: 10px;
+}
+
+.offersContainer #readMore {
+    padding-left: 300px;
+    padding-top: 30px;
+}
+
+.priceCard {
+    float: left;
+    margin-bottom: 3%;
+    border-radius: 12px;
+    border: 1px solid orange;
+    margin-left: 3%;
+    width: 450px;
+    height: 290px;
+    background-color: rgba(251, 237, 208, 0.65);
+}
+
+.cardImage {
+    float: left;
+    margin: 20px;
+}
+
+.cardImage img {
+    border-radius: 12px;
+    border: 1px solid lightgrey;
+}
+
+.cardText {
+    margin-top: 20px;
+    width: 240px;
+    float: left;
+}
+
+.priceDiv {
+    padding-top: 44px;
+}
+
+.priceBtn {
+    background-color: var(--spirit-lavender);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 10px;
+    border: 1px solid var(--spirit-pink);
+    padding: 15px 25px;
+}
+
+.secondPriceCard {
+    left: 35%;
+}
+
+.thirdPriceCard {
+    left: 65%;
+}
+
+
+/* **************** CONTACT ***************** */
+
+.contactContainer h2,
+.contactContainer p {
+    margin: 0 auto;
+    line-height: 2;
+    padding-left: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.contactContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contactCard {
+    background-color: rgba(251, 237, 208, 0.65);
+    border-radius: 12px;
+    border: 1px solid orange;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    min-width: 40%;
+    box-sizing: border-box;
+}
+
+.contactCard iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 40%;
+    border-radius: 10px;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=date],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: var(--spirit-lavender);
+    font-size: 14px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--spirit-pink);
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+.container h3 {
+    padding-left: 0;
+}
+
+
+/* **************** BASKET ***************** */
+
+.basketContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.basketCard {
+    background-color: rgba(251, 237, 208, 0.65);
+    border-radius: 12px;
+    border: 1px solid orange;
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    min-width: 40%;
+    box-sizing: border-box;
+}
+
+.basketCard iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 40%;
+    border-radius: 10px;
+}
+
+.basketContainer h3 {
+    padding-left: 0px;
+}
+
+.basketContainer p,
+h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans;
+    padding-left: 0;
+}
+
+.basketContainer p {
+    font-size: 14px;
+}
+
+.pricePad {
+    padding: 30px;
+}
+
+.item {
+    float: left;
+    width: 100%;
+}
+
+
+/* small devices */
+
+@media (max-width: 600px) {
+    img {
+        width: 80px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        padding-left: 10px;
+    }
+
+    .main {
+        padding: 0px 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    nav,
+    article,
+    aside {
+        width: 100%;
+        height: auto;
+    }
+
+    .membershipContainer {
+        left: 10px;
+        height: auto;
+    }
+
+    .cardImage {
+        margin: 10px;
+    }
+
+    .priceCard {
+        width: 94%;
+    }
+
+    .pricePad {
+        padding: 0px;
+    }
+
+    .basketContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .basketCard {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contactContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contactCard {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footerTop {
+        padding: 20px 10px;
+        height: 1060px;
+    }
+
+    .footerLinks {
+        width: 100%;
+    }
+}
+
+/* **************** ORDER CONFIRMATION ***************** */
+.confirmationContainer {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px 30px;
+    background-color: rgba(251, 237, 208, 0.65);
+    border: 1px solid orange;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.confirmationContainer h2 {
+    font-family: theSpiritFont;
+    font-size: 48px;
+    color: var(--spirit-lavender);
+}
+
+.confirmationContainer p {
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Cambria, serif;
+}
+
+.confirmationContainer .btnBack {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: var(--spirit-lavender);
+    color: white;
+    font-family: Cambria, serif;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.confirmationContainer .btnBack:hover {
+    background-color: var(--spirit-pink);
+}

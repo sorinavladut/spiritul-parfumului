@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Spiritul Parfumului - Preturi</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h2>Cosul tau</h2>
+    <div class="basketContainer">
+        <div class="basketCard">
+            <h3>Ai adaugat 6 produse</h3>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w1.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>La Vie Est Belle</p>
+                    <p>Apă de parfum Spray 100ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>429 RON</span></b>
+                </div>
+            </div>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w2.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>Black Opium</p>
+                    <p>Apă de parfum Spray 90ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>579 RON</span></b>
+                </div>
+            </div>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w3.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>Good Girl</p>
+                    <p>Apă de parfum Spray 50ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>575 RON</span></b>
+                </div>
+            </div>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w4.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>Versace Pour Femme Oud</p>
+                    <p>Apă de parfum Spray 100ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>512 RON</span></b>
+                </div>
+            </div>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w5.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>Bulgari Splendida Magnolia</p>
+                    <p>Apă de parfum Spray 100ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>549 RON</span></b>
+                </div>
+            </div>
+            <div class="item">
+                <hr class="headerLine">
+                <div class="cardImage">
+                    <img src="../images/w6.jpg" alt="Lancome" width="100" />
+                </div>
+                <div class="cardImage">
+                    <p>Valentino Born In Roma</p>
+                    <p>Apă de parfum Spray 100ml</p>
+                </div>
+                <div class="cardImage pricePad">
+                    <b><span>599 RON</span></b>
+                </div>
+            </div>
+            <h4>Subtotal 3243 RON</h4>
+            <p>Costurile de livrare vor fi calculate în pasul următor</p>
+            <h4>Total</h4>
+            <h4>3283 RON</h4>
+        </div>
+        <div class="basketCard">
+            <form id="checkoutForm">
+
+                <h3>Informatii de contact</h3>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Adresa ta de email ...">
+                <input type="checkbox" id="extra2" name="extra2" value="newsletter">
+                <label for="extra2">Abonează-te și ai oferte exclusive prin SMS & email</label>
+                <hr>
+
+                <h3>Detalii de livrare</h3>
+                <label for="fname">Prenume</label>
+                <input type="text" id="fname" name="firstName" placeholder="Prenumele tău ...">
+
+                <label for="lname">Nume</label>
+                <input type="text" id="lname" name="lastName" placeholder="Numele tău ...">
+
+                <label for="country">Țară</label>
+                <select id="country" name="country">
+                    <option value="fr">Franța</option>
+                    <option value="ro">România</option>
+                    <option value="uk">Regatul Unit</option>
+                </select>
+
+                <label for="address">Adresă</label>
+                <input type="text" id="address" name="address" placeholder="Adresa ta ...">
+
+                <label for="city">Oraș</label>
+                <input type="text" id="city" name="city" placeholder="Orașul tău ...">
+
+                <label for="postcode">Cod poștal</label>
+                <input type="text" id="postcode" name="postcode" placeholder="Codul poștal ...">
+
+
+                <label for="deliveryDate">Data livrării</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" />
+
+                <label for="phone">Telefon</label>
+                <input type="tel" id="phone" name="phone"
+                    pattern="^\s*(?:\+?(\d{1,3}))?([-. (]*(\d{3})[-. )]*)?((\d{3})[-. ]*(\d{2,4})(?:[-.x ]*(\d+))?)\s*$"
+                    placeholder="Telefon pentru suport, oferte și actualizări din partea echipei" />
+
+                <label for="notes">Note</label>
+                <textarea id="notes" name="notes" placeholder="Notele tale ..." style="height:100px"></textarea>
+
+                <input type="submit" value="Trimite comanda" />
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById("checkoutForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        window.location.href = "../pages/order-confirmation.html";
+    });
+</script>
+
+</html>
