@@ -14,10 +14,11 @@
             <a href="#">Spiritul Parfumului</a>
         </div>
         <div id="navLinks">
-            <a href="pages/membership.html" target="contentFrame">Abonamente</a>
-            <a href="pages/offers.html" target="contentFrame">Oferte</a>
-            <a href="pages/basket.html" target="contentFrame">Cosul tau</a>
-            <a href="pages/contact.html" target="contentFrame">Contact</a>
+            <a href="#section"
+                onclick="document.getElementById('contentFrame').src='pages/membership.html'">Abonamente</a>
+            <a href="#section" onclick="document.getElementById('contentFrame').src='pages/offers.html'">Oferte</a>
+            <a href="#section" onclick="document.getElementById('contentFrame').src='pages/basket.html'">Cosul tau</a>
+            <a href="#section" onclick="document.getElementById('contentFrame').src='pages/contact.html'">Contact</a>
         </div>
     </nav>
 
@@ -33,11 +34,11 @@
                 personale.
             </h2>
             <div id="readMore">
-                <a id="readMoreBtn" href="#membershipSection">Citește mai mult</a>
+                <a id="readMoreBtn" href="#section">Citește mai mult</a>
             </div>
         </header>
 
-        <section id="membershipSection" class="iframeContainer">
+        <section id="section" class="iframeContainer">
             <iframe id="contentFrame" name="contentFrame" src="pages/membership.html" frameborder="0"
                 allowfullscreen></iframe>
         </section>
@@ -48,10 +49,15 @@
         <div class="footerLinks">
             <h4>Spiritul Parfumului</h4>
             <ul>
-                <li><a href="pages/membership.html" target="contentFrame">Abonamente</a></li>
-                <li><a href="pages/offers.html" target="contentFrame">Oferte</a></li>
-                <li><a href="pages/basket.html" target="contentFrame">Coș</a></li>
-                <li><a href="pages/contact.html" target="contentFrame">Contact</a></li>
+                <li><a href="#section"
+                        onclick="document.getElementById('contentFrame').src='pages/membership.html'">Abonamente</a>
+                </li>
+                <li><a href="#section"
+                        onclick="document.getElementById('contentFrame').src='pages/offers.html'">Oferte</a></li>
+                <li><a href="#section" onclick="document.getElementById('contentFrame').src='pages/basket.html'">Cosul
+                        tau</a></li>
+                <li><a href="#section"
+                        onclick="document.getElementById('contentFrame').src='pages/contact.html'">Contact</a></li>
             </ul>
         </div>
 
